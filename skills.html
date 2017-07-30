@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="css/skills.css" rel="stylesheet" />
+		<script src="js/jquery/jquery-3.0.0.min.js"></script>
+		<script src="js/model/koaskills.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+
+			<!-- Left column -->
+			<div class="wrap-col wrap-col-left">
+				<div>
+					<div class="desc-main">Each skill has ten levels of proficiency. Available only 40 skill points, without race bonus, skill books and  skill trainers</div>
+					<table>
+						<tbody class="skill-table">
+							<tr class="nohov">
+								<td colspan="3">
+									<div class="totalpoints">Available points: <span class="points-spend">0</span>/40</div>
+								</td>
+								<td>
+									<input class="reset-btn" type="button" value="Reset" onclick="resetAll()">
+								</td>
+							</tr>
+							<tr class="nohov">
+								<td></td>
+								<td><div class="skill-level basic-level">Basic</div></td>
+								<td><div class="skill-level advanced-level">Advanced</div></td>
+								<td><div class="skill-level master-level">Master</div></td>
+							</tr>
+							<tr class="skill-table-row" data-skill="0">
+								<td class="default-label skill-name" data-skill="0">Alchemy</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="0" data-level="1"><span class="milestone">M</span></div>
+										<div class="block" data-skill="0" data-level="2"></div>
+										<div class="block" data-skill="0" data-level="3"><span class="milestone">M</span></div>
+										<div class="block" data-skill="0" data-level="4"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="0" data-level="5"><span class="milestone">M</span></div>
+										<div class="block" data-skill="0" data-level="6"></div>
+										<div class="block" data-skill="0" data-level="7"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="0" data-level="8"></div>
+										<div class="block" data-skill="0" data-level="9"></div>
+										<div class="block" data-skill="0" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="skill-table-row" data-skill="1">
+								<td class="default-label skill-name" data-skill="1">Blacksmithing</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="1" data-level="1"><span class="milestone">M</span></div>
+										<div class="block" data-skill="1" data-level="2"><span class="milestone">M</span></div>
+										<div class="block" data-skill="1" data-level="3"><span class="milestone">M</span></div>
+										<div class="block" data-skill="1" data-level="4"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="1" data-level="5"></div>
+										<div class="block" data-skill="1" data-level="6"><span class="milestone">M</span></div>
+										<div class="block" data-skill="1" data-level="7"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="1" data-level="8"></div>
+										<div class="block" data-skill="1" data-level="9"></div>
+										<div class="block" data-skill="1" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="skill-table-row" data-skill="2">
+								<td class="default-label skill-name" data-skill="2">Detect hidden</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="2" data-level="1"><span class="milestone">M</span></div>
+										<div class="block" data-skill="2" data-level="2"><span class="milestone">M</span></div>
+										<div class="block" data-skill="2" data-level="3"><span class="milestone">M</span></div>
+										<div class="block" data-skill="2" data-level="4"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="2" data-level="5"><span class="milestone">M</span></div>
+										<div class="block" data-skill="2" data-level="6"></div>
+										<div class="block" data-skill="2" data-level="7"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="2" data-level="8"><span class="milestone">M</span></div>
+										<div class="block" data-skill="2" data-level="9"></div>
+										<div class="block" data-skill="2" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="skill-table-row" data-skill="3">
+								<td class="default-label skill-name" data-skill="3">Dispelling</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="3" data-level="1"></div>
+										<div class="block" data-skill="3" data-level="2"><span class="milestone">M</span></div>
+										<div class="block" data-skill="3" data-level="3"></div>
+										<div class="block" data-skill="3" data-level="4"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="3" data-level="5"></div>
+										<div class="block" data-skill="3" data-level="6"></div>
+										<div class="block" data-skill="3" data-level="7"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="3" data-level="8"></div>
+										<div class="block" data-skill="3" data-level="9"></div>
+										<div class="block" data-skill="3" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="skill-table-row" data-skill="4">
+								<td class="default-label skill-name" data-skill="4">Lockpicking</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="4" data-level="1"></div>
+										<div class="block" data-skill="4" data-level="2"></div>
+										<div class="block" data-skill="4" data-level="3"></div>
+										<div class="block" data-skill="4" data-level="4"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="4" data-level="5"></div>
+										<div class="block" data-skill="4" data-level="6"></div>
+										<div class="block" data-skill="4" data-level="7"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="4" data-level="8"><span class="milestone">M</span></div>
+										<div class="block" data-skill="4" data-level="9"></div>
+										<div class="block" data-skill="4" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="skill-table-row" data-skill="5">
+								<td class="default-label skill-name" data-skill="5">Mercantile</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="5" data-level="1"></div>
+										<div class="block" data-skill="5" data-level="2"></div>
+										<div class="block" data-skill="5" data-level="3"><span class="milestone">M</span></div>
+										<div class="block" data-skill="5" data-level="4"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="5" data-level="5"></div>
+										<div class="block" data-skill="5" data-level="6"><span class="milestone">M</span></div>
+										<div class="block" data-skill="5" data-level="7"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="5" data-level="8"></div>
+										<div class="block" data-skill="5" data-level="9"></div>
+										<div class="block" data-skill="5" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="skill-table-row" data-skill="6">
+								<td class="default-label skill-name" data-skill="6">Persuasion</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="6" data-level="1"><span class="milestone">M</span></div>
+										<div class="block" data-skill="6" data-level="2"></div>
+										<div class="block" data-skill="6" data-level="3"><span class="milestone">M</span></div>
+										<div class="block" data-skill="6" data-level="4"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="6" data-level="5"></div>
+										<div class="block" data-skill="6" data-level="6"><span class="milestone">M</span></div>
+										<div class="block" data-skill="6" data-level="7"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="6" data-level="8"></div>
+										<div class="block" data-skill="6" data-level="9"></div>
+										<div class="block" data-skill="6" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="skill-table-row" data-skill="7">
+								<td class="default-label skill-name" data-skill="7">Sagecraft</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="7" data-level="1"></div>
+										<div class="block" data-skill="7" data-level="2"><span class="milestone">M</span></div>
+										<div class="block" data-skill="7" data-level="3"><span class="milestone">M</span></div>
+										<div class="block" data-skill="7" data-level="4"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="7" data-level="5"></div>
+										<div class="block" data-skill="7" data-level="6"><span class="milestone">M</span></div>
+										<div class="block" data-skill="7" data-level="7"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="7" data-level="8"><span class="milestone">M</span></div>
+										<div class="block" data-skill="7" data-level="9"></div>
+										<div class="block" data-skill="7" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="skill-table-row" data-skill="8">
+								<td class="default-label skill-name" data-skill="8">Stealth</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="8" data-level="1"><span class="milestone">M</span></div>
+										<div class="block" data-skill="8" data-level="2"></div>
+										<div class="block" data-skill="8" data-level="3"><span class="milestone">M</span></div>
+										<div class="block" data-skill="8" data-level="4"></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="8" data-level="5"><span class="milestone">M</span></div>
+										<div class="block" data-skill="8" data-level="6"></div>
+										<div class="block" data-skill="8" data-level="7"><span class="milestone">M</span></div>
+									</div>
+								</td>
+								<td>
+									<div class="pane">
+										<div class="block" data-skill="8" data-level="8"></div>
+										<div class="block" data-skill="8" data-level="9"><span class="milestone">M</span></div>
+										<div class="block" data-skill="8" data-level="10"><span class="milestone">M</span></div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- /Left column -->
+
+			<!-- Right column -->
+			<div class="wrap-col wrap-col-right">
+				<div style="width: 100%;">
+					<div class="desc-skill-name"></div>
+					<div class="desc-skill-wrap">
+						<div class="milestone-text"></div>
+						<div class="desc-skill-text">
+						</div>
+						<p class="desc-skill-level-desc"></p>
+						<p class="desc-skill-textAdv"></p>
+					</div>
+				</div>
+			</div>
+			<!-- /Right column -->
+
+		</div>
+	</body>
+	<script src="js/skills.js"></script>
+</html>

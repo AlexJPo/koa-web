@@ -1,0 +1,741 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="css/abilities.css" rel="stylesheet" />
+		<script src="js/jquery/jquery-3.0.0.min.js"></script>
+		<script src="js/model/koaabilities.js"></script>
+	</head>
+	<body>
+		<div class="btn-wrap">
+			<br>
+			<div class="totalpoints">Spended points: <span class="points-spend">0</span>/120
+			<input class="reset-btn" type="button" value="Reset" onClick="resetAll()">
+			</div>
+		</div>
+		<div class="tab-wrap">
+			<div class="tab-item" data-abilities="2"><span class="mainWord">S</span>ORCERY (<span class="spendPoint" data-abilities="2">0</span>)</div>
+			<div class="tab-item tab-item-active" data-abilities="0"><span class="mainWord">M</span>IGHT (<span class="spendPoint" data-abilities="0">0</span>)</div>
+			<div class="tab-item" data-abilities="1"><span class="mainWord">F</span>INESSE (<span class="spendPoint" data-abilities="1">0</span>)</div>
+		</div>
+		<div class="wrap">
+			<!-- Left column -->
+			<div class="wrap-col wrap-col-left">
+				<div class="tabs tab-content tab-content-active" data-abilities="0">
+					<table>
+						<tbody class="abilities-table">
+							<tr class="abilities-row5" data-abilities="0" data-row="5">
+								<td></td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="5" data-skill="0">
+										<img src="img/abilities/might/celerity.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="0" data-row="5" data-skill="1">
+										<img src="img/abilities/might/wrath.png" class="circle-icon">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="5" data-skill="2">
+										<img src="img/abilities/might/terror.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row4" data-abilities="0" data-row="4">
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+							</tr>
+							<tr class="abilities-row4" data-abilities="0" data-row="4">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="4" data-skill="0">
+										<img src="img/abilities/might/brutal_weaponry.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="4" data-skill="1">
+										<img src="img/abilities/might/stoneskin.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="block-arrow full-arrow" data-abilities="0"></div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="4" data-skill="2">
+										<img src="img/abilities/might/bloodlust.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="0" data-row="4" data-skill="3">
+										<img src="img/abilities/might/war_cry.png" class="circle-icon">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row3" data-abilities="0" data-row="3">
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row3" data-abilities="0" data-row="3">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="3" data-skill="0">
+										<img src="img/abilities/might/brutal_weaponry.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="3" data-skill="1">
+										<img src="img/abilities/might/bulwark.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="0" data-row="3" data-skill="2">
+										<img src="img/abilities/might/battle_frenzy.png" class="circle-icon">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="block-arrow full-arrow" data-abilities="0"></div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="3" data-skill="3">
+										<img src="img/abilities/might/vengeance.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-table-row2" data-abilities="0" data-row="2">
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row2" data-abilities="0" data-row="2">
+								<td><div class="block-arrow full-arrow" data-abilities="0"></div></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="2" data-skill="0">
+										<img src="img/abilities/might/concussive_force.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="2" data-skill="1">
+										<img src="img/abilities/might/aftershock.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="0" data-row="2" data-skill="2">
+										<img src="img/abilities/might/relentless_assault.png" class="circle-icon">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="2" data-skill="3">
+										<img src="img/abilities/might/powerstrike.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td></td>
+							</tr>
+							<tr class="abilities-table-row1" data-abilities="0" data-row="1">
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="0"></div></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row1" data-abilities="0" data-row="1">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="1" data-skill="0">
+										<img src="img/abilities/might/brutal_weaponry.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="1" data-skill="1">
+										<img src="img/abilities/might/greatsword_mastery.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="0" data-row="1" data-skill="2">
+										<img src="img/abilities/might/quake.png" class="circle-icon">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="1" data-skill="3">
+										<img src="img/abilities/might/adrenaline_surge.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="1" data-skill="4">
+										<img src="img/abilities/might/hardy_constitution.png">
+										<div class="current-level" data-abilities="0"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row0" data-abilities="0" data-row="0">
+								<td><div class="block-arrow min-arrow active-arrow" data-abilities="0"></div></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow active-arrow" data-abilities="0"></div></td>
+							</tr>
+							<tr class="abilities-row0" data-abilities="0" data-row="0">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="0" data-skill="0">
+										<img src="img/abilities/might/brutal_weaponry.png">
+										<div class="current-level" data-abilities="0">0</div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="0" data-skill="1">
+										<img src="img/abilities/might/longsword_mastery.png">
+										<div class="current-level" data-abilities="0">0</div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="0" data-skill="2">
+										<img src="img/abilities/might/hammer_mastery.png">
+										<div class="current-level" data-abilities="0">0</div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="0" data-row="0" data-skill="3">
+										<img src="img/abilities/might/harpoon.png" class="circle-icon">
+										<div class="current-level" data-abilities="0">0</div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="0" data-row="0" data-skill="4">
+										<img src="img/abilities/might/skillful_defense.png">
+										<div class="current-level" data-abilities="0">0</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="tabs tab-content" data-abilities="1">
+					<table>
+						<tbody class="abilities-table">
+							<tr class="abilities-row5" data-abilities="1" data-row="5">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="1" data-row="5" data-skill="0">
+										<img src="img/abilities/fin/gambit.png" class="circle-icon">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="5" data-skill="1">
+										<img src="img/abilities/fin/paralytic_poisons.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="5" data-skill="2">
+										<img src="img/abilities/fin/execution.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row4" data-abilities="1" data-row="4">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row4" data-abilities="1" data-row="4">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="4" data-skill="0">
+										<img src="img/abilities/fin/precise_weaponry.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="4" data-skill="1">
+										<img src="img/abilities/fin/poison_bomb.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="4" data-skill="2">
+										<img src="img/abilities/fin/scattershot.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="4" data-skill="3">
+										<img src="img/abilities/fin/mysterious_toxins.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-table-row3" data-abilities="1" data-row="3">
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row3" data-abilities="1" data-row="3">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="3" data-skill="0">
+										<img src="img/abilities/fin/precise_weaponry.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="1" data-row="3" data-skill="1">
+										<img src="img/abilities/fin/smoke_bomb.png" class="circle-icon">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="3" data-skill="2">
+										<img src="img/abilities/fin/barbed_arrows.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="1" data-row="3" data-skill="3">
+										<img src="img/abilities/fin/enduring_agony.png" class="circle-icon">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td><div class="block-arrow full-arrow" data-abilities="1"></div></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="1" data-row="3" data-skill="4">
+										<img src="img/abilities/fin/blade_honing.png" class="circle-icon">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row2" data-abilities="1" data-row="2">
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row2" data-abilities="1" data-row="2">
+								<td><div class="block-arrow full-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="2" data-skill="0">
+										<img src="img/abilities/fin/arrow_storm.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td><div class="block-arrow full-arrow" data-abilities="1"></div></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="2" data-skill="1">
+										<img src="img/abilities/fin/inoculation.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="2" data-skill="2">
+										<img src="img/abilities/fin/icy_explosion.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="1" data-row="2" data-skill="3">
+										<img src="img/abilities/fin/lunge.png" class="circle-icon">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row1" data-abilities="1" data-row="1">
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="1"></div></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row1" data-abilities="1" data-row="1">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="1" data-skill="0">
+										<img src="img/abilities/fin/precise_weaponry.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="1" data-skill="1">
+										<img src="img/abilities/fin/faeblade_mastery.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="1" data-skill="2">
+										<img src="img/abilities/fin/drawpower.png">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td><div class="block-arrow full-arrow" data-abilities="1"></div></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="1" data-row="1" data-skill="3">
+										<img src="img/abilities/fin/envenomed_edge.png" class="circle-icon">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="1" data-row="1" data-skill="4">
+										<img src="img/abilities/fin/frost_trap.png" class="circle-icon">
+										<div class="current-level" data-abilities="1"></div>
+									</div>
+								</td>
+								<td></td>
+							</tr>
+							<tr class="abilities-table-row0" data-abilities="1" data-row="0">
+								<td><div class="block-arrow min-arrow active-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow active-arrow" data-abilities="1"></div></td>
+								<td><div class="block-arrow min-arrow active-arrow" data-abilities="1"></div></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row0" data-abilities="1" data-row="0">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="0" data-skill="0">
+										<img src="img/abilities/fin/precise_weaponry.png">
+										<div class="current-level" data-abilities="1">0</div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="0" data-skill="1">
+										<img src="img/abilities/fin/dagger_mastery.png">
+										<div class="current-level" data-abilities="1">0</div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="0" data-skill="2">
+										<img src="img/abilities/fin/longbow_mastery.png">
+										<div class="current-level" data-abilities="1">0</div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="1" data-row="0" data-skill="3">
+										<img src="img/abilities/fin/shadow_flare.png" class="circle-icon">
+										<div class="current-level" data-abilities="1">0</div>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="1" data-row="0" data-skill="4">
+										<img src="img/abilities/fin/assassins_art.png">
+										<div class="current-level" data-abilities="1">0</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="tabs tab-content" data-abilities="2">
+					<table>
+						<tbody class="abilities-table">
+							<tr class="abilities-row5" data-abilities="2" data-row="5">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="5" data-skill="0">
+										<img src="img/abilities/sorc/sphere_of_retribution.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="2" data-row="5" data-skill="1">
+										<img src="img/abilities/sorc/meteor.png" class="circle-icon">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="5" data-skill="2">
+										<img src="img/abilities/sorc/winters_embrace.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row4" data-abilities="2" data-row="4">
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+							</tr>
+							<tr class="abilities-row4" data-abilities="2" data-row="4">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="4" data-skill="0">
+										<img src="img/abilities/sorc/arcane_weaponry.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="4" data-skill="1">
+										<img src="img/abilities/sorc/masterful_construction.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="2" data-row="4" data-skill="2">
+										<img src="img/abilities/sorc/elemental_rage.png" class="circle-icon">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td><div class="block-arrow full-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow full-arrow" data-abilities="2"></div></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="4" data-skill="3">
+										<img src="img/abilities/sorc/tempest.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td><div class="block-arrow full-arrow" data-abilities="2"></div></td>
+							</tr>
+							<tr class="abilities-table-row3" data-abilities="2" data-row="3">
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+							</tr>
+							<tr class="abilities-row3" data-abilities="2" data-row="3">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="3" data-skill="0">
+										<img src="img/abilities/sorc/arcane_weaponry.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="3" data-skill="1">
+										<img src="img/abilities/sorc/transference.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="3" data-skill="2">
+										<img src="img/abilities/sorc/sphere_of_reprisal.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="3" data-skill="3">
+										<img src="img/abilities/sorc/smolder.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td><div class="block-arrow full-arrow" data-abilities="2"></div></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="3" data-skill="4">
+										<img src="img/abilities/sorc/frostshackle.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row2" data-abilities="2" data-row="2">
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+							</tr>
+							<tr class="abilities-row2" data-abilities="2" data-row="2">
+								<td><div class="block-arrow full-arrow" data-abilities="2"></div></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="2" data-row="2" data-skill="0">
+										<img src="img/abilities/sorc/summon_faer_gorta.png" class="circle-icon">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="2" data-row="2" data-skill="1">
+										<img src="img/abilities/sorc/healing_surge.png" class="circle-icon">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td><div class="block-arrow full-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow full-arrow" data-abilities="2"></div></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="2" data-skill="2">
+										<img src="img/abilities/sorc/chain_lightning.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="2" data-row="2" data-skill="3">
+										<img src="img/abilities/sorc/ice_barrage.png" class="circle-icon">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row1" data-abilities="2" data-row="1">
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td><div class="block-arrow min-arrow" data-abilities="2"></div></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row1" data-abilities="2" data-row="1">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="1" data-skill="0">
+										<img src="img/abilities/sorc/arcane_weaponry.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="1" data-skill="1">
+										<img src="img/abilities/sorc/chakram_mastery.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="2" data-row="1" data-skill="2">
+										<img src="img/abilities/sorc/sphere_of_protection.png" class="circle-icon">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="2" data-row="1" data-skill="3">
+										<img src="img/abilities/sorc/mark_of_flame.png" class="circle-icon">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+								<td><div class="block-arrow full-arrow" data-abilities="2"></div></td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="1" data-skill="4">
+										<img src="img/abilities/sorc/conservative_casting.png">
+										<div class="current-level" data-abilities="2"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="abilities-table-row0" data-abilities="2" data-row="0">
+								<td><div class="block-arrow min-arrow active-arrow" data-abilities="2"></div></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><div class="block-arrow min-arrow active-arrow" data-abilities="2"></div></td>
+								<td></td>
+							</tr>
+							<tr class="abilities-row0" data-abilities="2" data-row="0">
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="0" data-skill="0">
+										<img src="img/abilities/sorc/arcane_weaponry.png">
+										<div class="current-level" data-abilities="2">0</div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="0" data-skill="1">
+										<img src="img/abilities/sorc/sceptre_mastery.png">
+										<div class="current-level" data-abilities="2">0</div>
+									</div>
+								</td>
+								<td>
+									<div class="ability-icon block-icon" data-abilities="2" data-row="0" data-skill="2">
+										<img src="img/abilities/sorc/staff_mastery.png">
+										<div class="current-level" data-abilities="2">0</div>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+								<td>
+									<div class="ability-icon circle-icon" data-abilities="2" data-row="0" data-skill="3">
+										<img src="img/abilities/sorc/storm_bolt.png" class="circle-icon">
+										<div class="current-level" data-abilities="2">0</div>
+									</div>
+								</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>-->
+			</div>
+			<!-- /Left column -->
+			<!-- Right column -->
+			<div class="wrap-col wrap-col-right">
+				<div style="width: 100%;">
+					<div class="ability-name"></div>
+					<div class="abilities-wrap">
+						<div class="level-text"></div>
+						<div class="ability-type-text"></div>
+						<div class="ability-text"></div>
+						<ul class="ability-req"></ul>
+						<div class="current-level-text"></div>
+						<ul class="ability-textAdv"></ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Right column -->
+		</div>
+	</body>
+	<script src="js/abilities.js"></script>
+</html>

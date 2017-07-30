@@ -1,0 +1,88 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: black;
+	font-family: 'Segoe UI';
+	font-weight: bold;
+	-webkit-user-select: none;
+	border: 1px solid #523518;
+	min-width: 1120px;
+}
+
+/* Tabs */
+.tabs { width: 570px; margin: 0 auto; }
+.tab-content {
+	display: none;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+.tab-content-active { display: block; opacity: 1; }
+.tab-wrap { display: flex; cursor: default; }
+.tab-item {
+	font-size: 22px;
+	color: #6e6e6e;
+	padding: 10px 0px;
+	flex-grow: 1;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+.tab-item-active { color: #f0ecf0!important; }
+.tab-item:hover { color: #afafaf; }
+
+.wrap { border: 5px solid #523518; overflow: hidden; }
+.table-wrap { height: 620px; overflow: hidden; }
+.table-wrap-scroll {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right: 17px;
+  width: 100%;
+}
+table { cursor: default; margin: 2px; }
+th { font-size: 18px; color: #8e8e8e; }
+.header-title {
+  margin: 0 0.1px;
+  outline: 1px solid #3e3e3e;
+  height: 35px;
+  padding-top: 10px;
+}
+
+/* RECEIPS */
+.receip {
+  cursor: pointer;
+  color: #8e8e8e;
+  height: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.receip:hover { color: #f0ecf0; }
+.receip td { padding: 0 5px; }
+.receip-item-active { color: #f0ecf0!important; outline: 1px solid white; }
+
+/* INGREDIENTS */
+.wrap-ingredients { height: 50px; margin: 10px 0; display: flex; }
+.ingrediet-title { color: #f0ecf0; font-size: 24px; padding: 5px 0 0 7px; }
+.ingredients-list { flex-grow: 1; display: flex; padding-left: 5px; }
+.ingredients-item { flex-grow: 1; position: relative; }
+.ingredients-item-img { width: 55px; height: 55px; }
+.ingredients-item-name {
+  color: white;
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 15px 0;
+}
+.ingredients-item-count {
+  color: white;
+  position: absolute;
+  left: 35px;
+  bottom: -5px;
+  font-size: 20px;
+}
