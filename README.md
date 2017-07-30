@@ -5,4 +5,4 @@ All links that i finded was broken. And this is the main reason for making this 
 
 If you have questions or you find bug, or just want to say thanks, you are wellcome: swtorigra@gmail.com
 
-All skills and abilities descriptions taked from this site: [http://amalur.wikia.com/wiki/Amalur_Wiki].
+All skills and abilities descriptions taked from this site: http://amalur.wikia.com/wiki/Amalur_Wiki.
